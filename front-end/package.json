@@ -1,0 +1,19 @@
+{
+  "name": "front-end_orinico",
+  "version": "1.0.0",
+  "description": "webstore of camera",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sciLuv/RemiLiance_5_21072021.git"
+  },
+  "author": "SciLuv",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sciLuv/RemiLiance_5_21072021/issues"
+  },
+  "homepage": "https://github.com/sciLuv/RemiLiance_5_21072021#readme"
+}

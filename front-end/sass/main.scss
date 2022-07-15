@@ -1,0 +1,98 @@
+.on-list-product{
+    width: 300px;
+    &:hover{
+        box-shadow: 3px 10px 21px 0px rgba(0,0,0,0.45);
+        .link-warning{
+            color: #e28d17 !important; 
+        }
+    }
+}
+
+
+.fab, .fas{
+    color: rgb(255, 255, 255);
+}
+.fa-trash{
+    color: gray;
+}
+aside{
+    background-image: linear-gradient(90deg, rgba(0,0,0,0.5) 31%, rgba(255,255,255,0) 100%), url("../vcam_2.jpg");
+    background-size: cover;
+}
+form{
+    display: none;
+}
+.trash{
+    cursor: pointer;
+    width: 50px;
+}
+.fa-trash{
+    margin-left: 2px;
+}
+.cart-price{
+    margin: 0px;
+}
+.form-control{
+    display: inline !important;
+    margin-right: 0px !important;
+    max-width: 800px;
+}
+#buy{
+    user-select: none;
+    visibility: hidden;
+}
+#counter{
+    min-width: 17px;
+    height: 17px;
+    background-color: rgb(218, 0, 0);
+    border-radius: 20px;
+    position : absolute;
+    right: 40px;
+    top: 10px;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px;
+    padding-bottom: 7px;
+    visibility: hidden;
+}
+
+#put-on-cart{
+    opacity: 0;
+    position: relative;
+    top: 5px;
+}
+#put-on-cart.put-on-cart{
+    animation: 0.8s linear addOnCart forwards;
+    animation-iteration-count: 1;
+}
+@keyframes addOnCart
+{
+    0% 
+    {
+        opacity: 0;
+        transform : translateY(15px);
+    }
+    3% 
+    {
+        opacity: 1;
+        transform : translateY(0px);
+    }
+    100% 
+    {
+        transform : translateY(0px);
+        opacity: 0;
+    }
+}
+
+.logo span{
+    margin-left: -7px;
+}
+
+.link-warning, .text-warning{
+  color: #9e5c00 !important;  
+}
+
+
