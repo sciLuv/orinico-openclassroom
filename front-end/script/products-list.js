@@ -32,7 +32,7 @@ const genHTMLProducts = getProductsInfo(urlAPI)
         newproduct.innerHTML = 
             "<img class='card-img-top' src='" + data[i].imageUrl + "' alt='appareil photo " + data[i].name + "'>" +
             "<div class='card-body'>" +
-            "<a class='link-warning text-decoration-none stretched-link' href='/front-end/page/product.html?id=" + data[i]._id + "'>" +
+            "<a class='link-warning text-decoration-none stretched-link' href='./page/product.html?id=" + data[i]._id + "'>" +
             "<h3 class='card-title' >" + data[i].name + "</h3></a>" +
             "<div class='product-descriptions'><p>" + data[i].description +  "</p>" + 
             "<strong>" + (data[i].price/100) + "€</strong></div>";

@@ -54,7 +54,7 @@ const intialCartSave = JSON.parse(localStorage.getItem("cart"));
 function initialyse(){
     if (cart != null){
         for (i = 0; i <= cart.length-1; i++){
-            genCartProductsHTML();
+            genCartProductsHTML(i);
             genQuantitySelection();
             addPrice();
     
@@ -137,7 +137,7 @@ function initialyse(){
 }
 
 //Génération HTML d'un produit
-function genCartProductsHTML(){
+function genCartProductsHTML(i){
     const productHTMLElement = document.createElement("article");
     //ajout des element crée dans la balise de section du HTML
     cartHTML.appendChild(productHTMLElement);
